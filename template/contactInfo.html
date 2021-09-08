@@ -1,0 +1,53 @@
+<div class="card">
+    <div class="card-header">Contact Info</div>
+    <div class="card-boady p-2">
+        <form class="form-horizontal">
+            <div class="form-group">
+                <label for="Name" class="col-sm-4 col-form-label" >Name</label>
+                <input type="text" ng-model="contactform.name" name="name" id="name" class="form-control col-sm-8" placeholder="User Name..." aria-describedby="helpId">
+              </div>
+              <div class="form-group">
+                  <label for="phone" class="col-sm-4 col-form-label" >Contact Number</label>
+                  <input type="text" ui-mask="999-999-9999" ng-model="contactform.phone" name="phone" id="phone" class="form-control col-sm-8" placeholder="XXX-XXX-XXXX" aria-describedby="helpId">
+                </div>
+                <div  ng-click="onSubmit(contactform)" class="btn btn-primary mt-1">Submit</div>
+        </form>
+    </div>
+</div>
+<hr>
+<div class="card">
+    <div class="card-header"> 
+        <label class="col-8 d-print-inline-block" for="Contact List">Contact List</label>
+            <label class="form-group col-3 d-print-inline-block">
+              <input type="text" class="form-control d-print-inline-block" ng-model="searchkey" ng-keyup="onSearchKey($event)" name="search" id="search" placeholder="Filter here...">
+            </label>
+    </div>
+    <div class="card-body">
+        <div class="container">
+            <!-- <div ng-repeat="contact in contactlist " class="row">
+                <div class="col-1">{{$index+1}}</div>
+                <div class="col-6">{{contact.name}}</div>
+                <div class="col-5">{{contact.phone}}</div>
+            </div> -->
+
+
+            <table class="table table-hover">
+                <thead>
+                  <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Contact Name</th>
+                    <th scope="col">Contact Phone</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr ng-repeat="contact in contactlist " >
+                    <th scope="row">{{$index+1}}</th>
+                    <td>{{contact.name}}</td>
+                    <td>{{contact.phone}}</td>
+                  </tr>
+                </tbody>
+              </table>
+
+        </div>
+    </div>
+</div>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AngularJS Sync Contact</title>
+
+    <!-- <link rel="stylesheet" type="text/css" href="../extstatic/uitemplate/assets/node_modules/bootstrap/dist/css/bootstrap.min.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.1/css/bootstrap.min.css" integrity="sha512-6KY5s6UI5J7SVYuZB4S/CZMyPylqyyNZco376NM2Z8Sb8OxEdp02e1jkKk/wZxIEmjQ6DRCEBhni+gpr9c4tvA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/angularjs-toaster/3.0.0/toaster.css" integrity="sha512-fSmapLWjGquJZCwEH5fUU1Ys9VPfkVbj25ff0PuMLmcF/AwniEl7xR4WIr17V5bQ+Sy6xlcpOJNawvnn2qk2CQ==" crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
+    <!-- <link href="dist/css/app.css" rel="stylesheet"> -->
+</head>
+<body ng-app="myApp">
+    <!-- <script src="../extstatic/uitemplate/assets/node_modules/jquery/jquery-3.2.1.min.js"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js" integrity="sha512-uto9mlQzrs59VwILcLiRYeLKPPbS/bT71da/OEBYEwcdNUk8jYIy+D176RYoop1Da+f9mvkYrmj5MCLZWEtQuA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+   
+   	<!-- Firebase App (the core Firebase SDK) is always required and must be listed first -->
+	<script src="https://www.gstatic.com/firebasejs/6.6.0/firebase-app.js"></script>
+
+	<!-- Add Firebase products that you want to use -->
+	<script src="https://www.gstatic.com/firebasejs/6.6.0/firebase-auth.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/6.6.0/firebase-firestore.js"></script>
+    
+    <!-- <script src="../extstatic/uitemplate/assets/node_modules/jqueryui/jquery-ui.min.js"></script> -->
+    <!-- <script src="../extstatic/lib/angular.min.js"></script> -->
+    <!-- <script src="../extstatic/lib/angular-route.min.js"></script> -->
+    <!-- <script src="../extstatic/lib/angular-resource.min.js"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.8.2/angular.min.js" integrity="sha512-7oYXeK0OxTFxndh0erL8FsjGvrl2VMDor6fVqzlLGfwOQQqTbYsGPv4ZZ15QHfSk80doyaM0ZJdvkyDcVO7KFA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-route/1.8.2/angular-route.min.js" integrity="sha512-5zOAub3cIpqklnKmM05spv4xttemFDlbBrmRexWiP0aWV8dlayEGciapAjBQWA7lgQsxPY6ay0oIUVtY/pivXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angularFire/2.3.0/angularfire.min.js" integrity="sha512-8ZDKhABrbEX/eIybbe5W4gM3qP6ABDDHrb9c/+HoqI6jT3vDIxmNSlEsw1DBd/J/dmLDs5Ueg2WWYLqpq0/U8A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/angular-ui-utils/0.1.1/angular-ui-utils.min.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/angularjs-dropdown-multiselect/1.11.8/angularjs-dropdown-multiselect.min.js" integrity="sha512-n6LmUTom+Lm/XrRWRYJQ3nOWVUMOgnwnoPKLwAhG8dMhGwVvr0+e9gkrZg7ieX92CWmNVkCi0xK2/4OytIKMsQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angularjs-pdf/2.0.0/angular-pdf.min.js" integrity="sha512-owsniZUDzAFHMBI3//CnzxlqXNTpVibgnC7WdPPE2dlCu0vy2XddqofCnuEuAELD2WjAke4QfImAeGXOGZEzLg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angularjs-datepicker/2.1.23/angular-datepicker.min.js" integrity="sha512-b+yZxP3ttYrh8bcJJFFHopmaZ9+PmOdmUL01PKuLo3MDMbwM+A2RAZY6fVeA39OdUaR6UgX0JO3BFhlvv1gzmQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-js-bootstrap-datetimepicker/2.5.1/datetimepicker.min.js" integrity="sha512-LsQNrXBEIJXNXwvLgQKCnLJvbNitdNwXb5iIPCQ0CmpJ5s7Drl5o72t3tR/Y7CRzYNGlV0SGM+C78uJucgxJww==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angularjs-toaster/3.0.0/toaster.min.js" integrity="sha512-amwB9QMDBPhNBT/RZvfuZMXonx2jTtwVU1fJW1OLX7z5gAyWxkjeGFEjcLVGPoyljwqrtQtCrhxmzKHu/HH4Lw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-cookies/1.8.2/angular-cookies.min.js" integrity="sha512-5MlJcQrhy663S1tAEEQGHzoqqdsCIoFYA2ZLajvSeZl4uVxbBvive9hqpiIqHl3CEQfe7WlI/S1lbjsdoEBnRA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    -->
+   
+    <!-- <script src="https://cdn.firebase.com/libs/angularfire/1.1.3/angularfire.min.js"></script> -->
+    
+    
+
+
+    
+    <!-- <script src="../extstatic/uitemplate/assets/node_modules/bootstrap/dist/js/bootstrap.min.js"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.1/js/bootstrap.min.js" integrity="sha512-ewfXo9Gq53e1q1+WDTjaHAGZ8UvCWq0eXONhwDuIoaH8xz2r96uoAYaQCm1oQhnBfRXrvJztNXFsTloJfgbL5Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- App Files -->
+    <script src="dist/js/GmConstant.js"></script>
+    <!-- <script src="dist/js/GmFirebaseConfig.js"></script> -->
+    <script src="dist/app/app.js"></script>
+    <script src="dist/app/contactController.js"></script>
+
+    <div ng-view></div>
+</body>
+</html>
