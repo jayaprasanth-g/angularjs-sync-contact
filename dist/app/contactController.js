@@ -15,9 +15,13 @@ app.controller('contactController', function ($scope) {
             .then(function (querySnapshot) {
                 querySnapshot.forEach(function (doc) {
                     console.log(doc.id, " => ", doc.data());
-                    list.push(doc.data());
+                    const data = doc.data();
+                    const fbdocid = doc.id;
+                    const mixData =  { fbdocid, ...data };
+                    list.push(mixData);
                 });
                 $scope.contactlist = list;
+                
                 $scope.$apply();
                 console.log($scope.contactlist);
             });
@@ -39,6 +43,14 @@ app.controller('contactController', function ($scope) {
         else {
             alert("Please enter contact name");
         }
+    };
+
+    $scope.onEdit = function () {
+        alert("Edit Info");
+    };
+
+    $scope.onDelete = function () {
+        alert("Delete Info");
     };
 
     $scope.onSearchKey = function ($event) {

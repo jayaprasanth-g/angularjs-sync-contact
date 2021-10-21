@@ -1,0 +1,5 @@
+#contact-list-data {
+    height: 50vh;
+    width: 100%;
+    overflow-y: auto;
+}

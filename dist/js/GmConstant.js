@@ -19,17 +19,27 @@
 
 // Your web app's Firebase configuration
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+// my account
+// const firebaseConfig = {
+//     apiKey: "AIzaSyBektzeHPb9JdDqcA4WqkdcXVTrUUNuJlU",
+//     authDomain: "svcfiredev-cdccc.firebaseapp.com",
+//     projectId: "svcfiredev-cdccc",
+//     storageBucket: "svcfiredev-cdccc.appspot.com",
+//     messagingSenderId: "638853643248",
+//     appId: "1:638853643248:web:669fac561490f524237b35",
+//     measurementId: "G-Q9FBT6YQ3B"
+// };
+
 const firebaseConfig = {
-    apiKey: "AIzaSyBektzeHPb9JdDqcA4WqkdcXVTrUUNuJlU",
-    authDomain: "svcfiredev-cdccc.firebaseapp.com",
-    projectId: "svcfiredev-cdccc",
-    storageBucket: "svcfiredev-cdccc.appspot.com",
-    messagingSenderId: "638853643248",
-    appId: "1:638853643248:web:669fac561490f524237b35",
-    measurementId: "G-Q9FBT6YQ3B"
+apiKey: "AIzaSyBektzeHPb9JdDqcA4WqkdcXVTrUUNuJlU",
+authDomain: "svcfiredev-cdccc.firebaseapp.com",
+databaseURL: "https://svcfiredev-cdccc-default-rtdb.firebaseio.com",
+projectId: "svcfiredev-cdccc",
+storageBucket: "svcfiredev-cdccc.appspot.com",
+messagingSenderId: "638853643248",
+appId: "1:638853643248:web:669fac561490f524237b35",
+measurementId: "G-Q9FBT6YQ3B"
 };
-
-
 // // Initialize Firebase
 
 firebase.initializeApp(firebaseConfig);
