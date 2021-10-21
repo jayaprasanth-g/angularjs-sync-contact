@@ -1,0 +1,840 @@
+{
+  "indexes": [
+    {
+      "collectionGroup": "Cases",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "acctrepid",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "start",
+          "order": "ASCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "Cases1",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "acctrepid",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "start",
+          "order": "ASCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "Cases1",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "caseId",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "start",
+          "order": "ASCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "cities",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "state",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "population",
+          "order": "ASCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "FT5010_TAG",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "C5010_LOCATION_ID",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "C207_SET_ID",
+          "order": "ASCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "FT5010_TAG",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "C5010_LOCATION_ID",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "C207_SET_NAME",
+          "order": "ASCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "FT5010_TAG",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "C5010_LOCATION_ID",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "C5010_TAG_ID",
+          "order": "ASCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "FT5010_TAG",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "C5010_LOCATION_ID",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "C5010_VOID_FL",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "C207_SET_ID",
+          "order": "ASCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "FT5010_TAG",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "C5010_LOCATION_ID",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "C5010_VOID_FL",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "C207_SET_NAME",
+          "order": "ASCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "FT5010_TAG",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "C5010_LOCATION_ID",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "C5010_VOID_FL",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "C5010_TAG_ID",
+          "order": "ASCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "FT7600_CASE",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "acctrepid",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "start",
+          "order": "ASCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "FT7600_CASE",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "c6700_voidfl",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "c701_assc_d_id",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "c7600_startdt",
+          "order": "ASCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "FT7600_CASE",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "c6700_voidfl",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "c703_acctrepid",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "c9100_compid",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "c7600_startdt",
+          "order": "ASCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "FT7600_CASE",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "c6700_voidfl",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "c703_coveredbyid",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "c7600_startdt",
+          "order": "ASCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "FT7600_CASE",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "c6700_voidfl",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "c703_coveredbyid",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "c9100_compid",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "c7600_startdt",
+          "order": "ASCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "FT7600_CASE",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "c6700_voidfl",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "c703_coveredbyid",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "ca6700_surgnids.`41704`",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "c7600_startdt",
+          "order": "ASCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "FT7600_CASE",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "c6700_voidfl",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "c7600_startdt",
+          "order": "ASCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "FT7600_CASE",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "c6700_voidfl",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "ca101_assc_userids.`15`",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "c7600_startdt",
+          "order": "ASCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "FT7600_CASE",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "c6700_voidfl",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "ca6700_surgnids.`1575`",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "c7600_startdt",
+          "order": "ASCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "FT7600_CASE",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "c6700_voidfl",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "ca6700_surgnids.`41704`",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "ca703_sharedrepids.`1882`",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "c7600_startdt",
+          "order": "ASCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "FT7600_CASE",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "c703_acctrepid",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "c9100_compid",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "c7600_startdt",
+          "order": "ASCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "FT7600_CASE",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "c703_coveredbyid",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "c704_acctid",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "c7600_caseid",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "c7600_startdt",
+          "order": "ASCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "FT7600_CASE",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "c703_coveredbyid",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "c704_acctid",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "c7600_startdt",
+          "order": "ASCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "FT7600_CASE",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "c703_coveredbyid",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "c7600_caseid",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "c7600_startdt",
+          "order": "ASCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "FT7600_CASE",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "c703_coveredbyid",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "c7600_startdt",
+          "order": "ASCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "FT7600_CASE",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "c703_coveredbyid",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "c7600_title",
+          "order": "ASCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "FT7600_CASE",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "c704_acctid",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "c7600_startdt",
+          "order": "ASCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "FT7600_CASE",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "c7600_caseid",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "c7600_startdt",
+          "order": "ASCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "FT7600_CASE",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "c9100_compid",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "c7600_startdt",
+          "order": "ASCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "FT7600_CASE",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "ca101_assc_userids",
+          "arrayConfig": "CONTAINS"
+        },
+        {
+          "fieldPath": "c6700_voidfl",
+          "order": "ASCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "FT7600_CASE",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "ca101_assc_userids",
+          "arrayConfig": "CONTAINS"
+        },
+        {
+          "fieldPath": "c6700_voidfl",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "c7600_startdt",
+          "order": "ASCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "FT7600_CASE",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "ca101_assc_userids",
+          "arrayConfig": "CONTAINS"
+        },
+        {
+          "fieldPath": "c7600_startdt",
+          "order": "ASCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "FT7600_CASE",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "ca101_assc_userids.`1882`",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "c7600_startdt",
+          "order": "ASCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "FT7600_CASE",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "ca6700_surgnids",
+          "arrayConfig": "CONTAINS"
+        },
+        {
+          "fieldPath": "c7600_startdt",
+          "order": "ASCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "FT7600_CASE",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "ca703_sharedrepids",
+          "arrayConfig": "CONTAINS"
+        },
+        {
+          "fieldPath": "c6700_voidfl",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "c704_acctid",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "c7600_caseid",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "c7600_startdt",
+          "order": "ASCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "FT7600_CASE",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "ca703_sharedrepids",
+          "arrayConfig": "CONTAINS"
+        },
+        {
+          "fieldPath": "c6700_voidfl",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "c7600_startdt",
+          "order": "ASCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "FT7600_CASE",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "ca901_procedures",
+          "arrayConfig": "CONTAINS"
+        },
+        {
+          "fieldPath": "c6700_voidfl",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "c7600_startdt",
+          "order": "ASCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "FT7600_CASE",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "ca901_proceduresids",
+          "arrayConfig": "CONTAINS"
+        },
+        {
+          "fieldPath": "c6700_voidfl",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "c7600_startdt",
+          "order": "ASCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "FT7605_EQUIPMENT_FAVORITE",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "c7605_created_by_id",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "c7605_favorite_name",
+          "order": "ASCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "FT7620_Case_Inventory",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "CA7602_set_list",
+          "arrayConfig": "CONTAINS"
+        },
+        {
+          "fieldPath": "C7600_Surgery_Date",
+          "order": "ASCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "FT7625_REQUEST",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "c7625_request_type",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "c7625_status",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "c7625_void_fl",
+          "order": "ASCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "restaurants",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "category",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "avgRating",
+          "order": "DESCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "restaurants",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "category",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "numRatings",
+          "order": "DESCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "restaurants",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "category",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "price",
+          "order": "ASCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "restaurants",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "city",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "avgRating",
+          "order": "DESCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "restaurants",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "city",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "numRatings",
+          "order": "DESCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "restaurants",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "city",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "price",
+          "order": "ASCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "restaurants",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "price",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "avgRating",
+          "order": "DESCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "restaurants",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "price",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "numRatings",
+          "order": "DESCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "T901_CODE_LOOKUP",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "C901_CODE_GRP",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "C901_CODE_NM",
+          "order": "ASCENDING"
+        }
+      ]
+    }
+  ],
+  "fieldOverrides": [
+    {
+      "collectionGroup": "landmarks",
+      "fieldPath": "type",
+      "indexes": [
+        {
+          "order": "ASCENDING",
+          "queryScope": "COLLECTION"
+        },
+        {
+          "order": "DESCENDING",
+          "queryScope": "COLLECTION"
+        },
+        {
+          "arrayConfig": "CONTAINS",
+          "queryScope": "COLLECTION"
+        },
+        {
+          "order": "ASCENDING",
+          "queryScope": "COLLECTION_GROUP"
+        }
+      ]
+    }
+  ]
+}
